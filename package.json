@@ -1,0 +1,19 @@
+{
+  "name": "codedamn-course-project",
+  "version": "1.0.0",
+  "description": "![Design for the project](https://raw.githubusercontent.com/codedamn-projects/html5-massively-landing-page/master/assets/desktop-design-non-fs.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.2"
+  }
+}

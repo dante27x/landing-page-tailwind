@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom form styling for everything */
+@layer base {
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full border-gray-200 shadow-sm focus:border-gray-400 focus:ring-gray-400;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    @apply rounded border-gray-300 text-textOne focus:ring-gray-400;
+  }
+}
+
+/* Add custom fonts */
+@font-face {
+  font-family: 'Source Sans Pro Black';
+  src: url('../src/assets/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu3cOWxw.woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../src/assets/fonts/fa-brands-400.woff2');
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  src: url('../src/assets/fonts/fa-solid-900.woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather Light Italic';
+  src: url('../src/assets/fonts/u-4l0qyriQwlOrhSvowK_l5-eR7lXff4jvzDP3WG.woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather Italic';
+  src: url('../src/assets/fonts/u-4n0qyriQwlOrhSvowK_l521wRZWMf6hPvhPQ.woff2');
+}
+
+body {
+  background: url('../src/assets/images/bg.jpg');
+  background-repeat: repeat, no-repeat;
+  background-position: top, top;
+  background-color: rgba(30, 37, 45, 0.7);
+  background-blend-mode: darken;
+}
+
+label {
+  @apply font-faSourceSans;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+nav > a.active {
+  background-color: white;
+}
+
+nav > a.active > h3 {
+  color: theme(colors.textOne);
+}
+
+#pagination > div > span.active {
+  background: theme('colors.gray.200');
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  h3 {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+/* Hamburger */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+}
+
+.ham-top,
+.ham-middle,
+.ham-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: theme(colors.textFour);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.ham-middle {
+  transform: translateY(7px);
+}
+
+.ham-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .ham-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .ham-middle {
+  display: none;
+}
+
+.open .ham-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* side menu drawer transition */
+
+.side-menu {
+  height: 0vh;
+  width: 0vw;
+  transition: 0.5s;
+}
+
+/* image width */
+img {
+  max-width: 80%;
+}
+
+/* content items paragraph font */
+#content-items > div > div > p {
+  font-family: theme('fontFamily.merriweatherItalic');
+  text-align: left;
+}
+
+#pagination > div > span {
+  font-family: theme('fontFamily.faSourceSans');
+  font-weight: bold;
+}

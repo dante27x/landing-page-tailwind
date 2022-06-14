@@ -1,0 +1,6 @@
+node_modules
+dist
+.cdmrc
+.DS_store
+.vscode/settings.json
+src/.DS_Store
