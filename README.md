@@ -24,9 +24,9 @@ Feel free to give suggestions and feedback! Happy coding.
 
 # Run Project
 
-Step 1: Clone project repository.
-Step 2: Run "npm install" in the root directory.
-Step 3: Run "npm run build" -> To produce "output.css" inside "/dist" directory.
-Final Step: Open "index.html" in browser.
+Step 1: Clone project repository. <br />
+Step 2: Run "npm install" in the root directory. <br />
+Step 3: Run "npm run build" -> To produce "output.css" inside "/dist" directory. <br />
+Final Step: Open "index.html" in browser. <br />
 
 Thanks!
