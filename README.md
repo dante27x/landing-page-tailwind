@@ -21,3 +21,12 @@ Responsiveness.
 # Feedback
 
 Feel free to give suggestions and feedback! Happy coding.
+
+# Run Project
+
+Step 1: Clone project repository.
+Step 2: Run "npm install" in the root directory.
+Step 3: Run "npm run build" -> To produce "output.css" inside "/dist" directory.
+Final Step: Open "index.html" in browser.
+
+Thanks!
